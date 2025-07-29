@@ -3,6 +3,11 @@ target/
 .mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
+.git
+.gitignore
+README.md
+Dockerfile
+.dockerignore
 
 ### STS ###
 .apt_generated
@@ -31,3 +36,19 @@ build/
 
 ### VS Code ###
 .vscode/
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+
+# Logs comunes
+*.log
+
+# Docker
+docker-compose.override.yml
+.env
+*.env
+
+# Archivos generados
+*.class
+
