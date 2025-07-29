@@ -1,5 +1,6 @@
 package com.softcon.negociosimple.controller;
 
+import com.softcon.negociosimple.dto.GastoDTO;
 import com.softcon.negociosimple.model.Gasto;
 import com.softcon.negociosimple.service.GastoService;
 import io.swagger.v3.oas.annotations.Operation;
@@ -25,7 +26,7 @@ public class GastoController {
 	
 	@Operation(summary = "Crear un nuevo gasto")
 	@PostMapping
-	public Gasto crear(@RequestBody Gasto gasto) {
-		return gastoService.create(gasto);
+	public Gasto crear(@RequestBody GastoDTO gastoDto) {
+		return gastoService.create(gastoDto);
 	}
 }
