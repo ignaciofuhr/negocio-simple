@@ -1,4 +1,4 @@
-package com.softcon.negociosimple;
+package com.softcon.negociosimple.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -6,9 +6,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/api")
-public class TestController {
+public class StatusController {
 @GetMapping("/ping")
     public String ping(){
-    return "Micaela e Ignacio (L)";
+    return "Status Ok";
 }
 }
