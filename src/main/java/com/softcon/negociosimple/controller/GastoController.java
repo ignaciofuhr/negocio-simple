@@ -20,7 +20,7 @@ public class GastoController {
 	
 	@Operation(summary = "Listar todos los gastos")
 	@GetMapping
-	public List<Gasto> listar() {
+	public List<Gasto> findAll() {
 		return gastoService.findAll();
 	}
 	

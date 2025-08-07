@@ -24,7 +24,7 @@ public class IngresoService {
 		return ingresoRepository.save(ingreso);
 	}
 	
-	public List<Ingreso> getAll() {
+	public List<Ingreso> findAll() {
 		return ingresoRepository.findAll();
 	}
 	

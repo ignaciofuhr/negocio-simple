@@ -24,7 +24,7 @@ public class IngresoController {
 	
 	@Operation(summary = "Listar todos los ingresos")
 	@GetMapping
-	public List<Ingreso> getAll() {
-		return ingresoService.getAll();
+	public List<Ingreso> findAll() {
+		return ingresoService.findAll();
 	}
 }
